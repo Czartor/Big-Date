@@ -5,6 +5,7 @@ def decimal_to_binary(num):
     while(num>=1):
         res.append(str(num%2))
         num = int(num / 2)
+    res.reverse()
     return "".join(res)
 
 print("Podaj liczbę:")

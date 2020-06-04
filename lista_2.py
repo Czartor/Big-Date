@@ -1,4 +1,4 @@
-f = open("lista.txt", "a+")
+file = open("lista.txt", "a+")
 add = True
 print("Podaj studentów do wczytania:")
 stud = []
@@ -16,8 +16,8 @@ while(add):
         add = False
 for s in stud:
     student = ", ".join(s)
-    f.write(student)
-    f.write("\n")
-f.close()    
+    file.write(student)
+    file.write("\n")
+file.close()    
 
     

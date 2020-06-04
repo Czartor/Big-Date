@@ -9,5 +9,5 @@ count = 0
 for number in numbers:
     if number < 23:
         count += 1
-        
+print (numbers)        
 print("Liczb mniejszych od 23 było", count)

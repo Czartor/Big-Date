@@ -1,6 +1,6 @@
 print("Podaj ścieżkę do pliku:")
 path = input()
-file = open(path, "r+")
+file = open(path, "r")
 data = file.read()
 file.close()
 new_data_as_list = []
