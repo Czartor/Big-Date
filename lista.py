@@ -1,20 +1,20 @@
 file = open("lista.txt", "a+")
 add = True
 print("Podaj studentów do wczytania:")
-stud = []
+studenci = []
 while(add):
     print("Imie:")
-    name = input()
+    imie = input()
     print("Nazwisko:")
-    sname = input()
+    nazwisko = input()
     print("Grupa:")
-    group = input()
-    stud.append((name, sname, group))
+    grupa = input()
+    studenci.append((imie, nazwisko, grupa))
     print("Czy chcesz dodać kolejnego studenta? Wpisz tak/nie")
     d = input()
     if d == "nie":
         add = False
-for s in stud:
+for s in studenci:
     student = ", ".join(s)
     file.write(student)
     file.write("\n")
