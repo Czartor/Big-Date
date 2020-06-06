@@ -1,11 +1,11 @@
 print("Podaj słowo: ")
-word = input()
-word_as_list = list(word)
+wpisane_słowo = input()
+wpisane_słowo_as_list = list(wpisane_słowo)
 
-for i in range(len(word_as_list)):
-    as_number = ord(word_as_list[i])+1
+for i in range(len(wpisane_słowo_as_list)):
+    as_number = ord(wpisane_słowo_as_list[i])+1
     as_char = chr(as_number)
-    word_as_list[i] = as_char
+    wpisane_słowo_as_list[i] = as_char
     
-word_rotated = "".join(word_as_list)
-print(word_rotated)
+wpisane_słowo_rotated = "".join(wpisane_słowo_as_list)
+print(wpisane_słowo_rotated)
